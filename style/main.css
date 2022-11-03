@@ -1,0 +1,53 @@
+.login{
+    
+    margin: 10% 0% 0% 35%;
+    height: 400px;
+    width: 400px;
+    border: 1px solid rgb(182, 178, 178);
+    border-radius: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    padding: 10px;
+    place-items: center;
+    background-color: rgb(244, 244, 244);
+}
+
+input[type=text], select {
+    margin: auto;
+    height: 40px;
+    width: 60%;
+    padding: 10px;
+    margin: 20% 10% 10% 20%; /*top right bottom left*/
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+  }
+
+  input[type=password], select {
+    margin: auto;
+    height: 40px;
+    width: 60%;
+    padding: 10px;
+    margin: 0% 10% 10% 20%; /*top right bottom left*/
+    margin-left: 20%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type=button] {
+    margin: auto;
+    height: 40px;
+    width: 40%;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    margin: 0% 10% 10% 30%; /*top right bottom left*/
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: rgb(65, 165, 252);
+  }
+  input[type=button]:hover {
+    background-color: rgb(11, 141, 255);
+  }
