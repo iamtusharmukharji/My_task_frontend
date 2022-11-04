@@ -65,6 +65,7 @@ input[type=text], select {
     height: 40px;
     width: 40%;
     cursor: pointer;
+    color: white;
     font-size: 15px;
     margin: 0% 10% 10% 30%; /*top right bottom left*/
     border: 1px solid #ccc;
@@ -79,7 +80,7 @@ input[type=text], select {
   .signup-button {
     margin: auto;
     height: 40px;
-    width: 80px;
+    width: auto;
     cursor: pointer;
     font-size: 15px;
     margin-right: 10px;
@@ -88,10 +89,54 @@ input[type=text], select {
     border-radius: 4px;
     float: right;
     box-sizing: border-box;
-    background-color: rgb(96, 252, 65);
+    background-color: rgb(0, 188, 53);
   }
   .signup-button:hover {
-    background-color: rgb(27, 255, 11);
+    background-color: rgb(2, 202, 58);
 
   }
+  .form-modal{
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  .form-modal-content{
+    background-color: #ebebeb;
+    padding: 10px;
+    margin-left: 25%;
+    border: 1px solid #888;
+    border-radius: 10px;
+    width: 40%;
+    height: 400px;
+  }
+  .loader {
+    border: 10px solid #ffffff;
+    border-radius: 50%;
+    border-top: 10px solid rgb(0, 188, 53);
+    width: 40px;
+    display: none;
+    height: 40px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
  

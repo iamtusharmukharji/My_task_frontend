@@ -13,7 +13,7 @@
 <body style="background-color: rgb(226, 224, 224)">
     <div class="header-div">
         My Task
-        <button class="signup-button">SignUp</button>
+        <button class="signup-button" onclick="showModal('form-modal',1)">Sign Up</button>
     </div>
     
     <div class="login">
@@ -27,5 +27,23 @@
         <button class="login-button" onclick="login()">Login</button>
         
     </div>
+
+    <div id="form-modal" class="form-modal">
+
+        <!-- Modal content -->
+        <div class="form-modal-content">
+          <span id="close" onclick="showModal('form-modal',0)" style="float: right; font-size:35px; cursor:pointer;">&times;</span><br><br><br>
+            <input id="emailBox" type="text" placeholder="Email" style="margin-bottom: 15px;">
+            <input id="nameBox" type="text" placeholder="Name" style="margin-bottom: 15px;">
+            <input id="passBox" type="password" placeholder="Password" style="margin-bottom: 15px;">
+            <input id="cnfPassBox" type="password" placeholder="Confirm password" style="margin-bottom: 15px;"><br><br>
+            <center><p id="alert" style="position:relative;font-family: Arial, Helvetica, sans-serif; color: rgb(249, 69, 84);"></p></center><br>
+            <center><div id="loader" class="loader"></div></center>
+            <center><button id = "create-acc-button" class="signup-button" onclick="signup()" style="color: white;margin-right: 40%;">Create Account</button></center>
+
+          
+        </div>
+      
+      </div>
 </body>
 </html>
