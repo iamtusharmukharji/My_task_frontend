@@ -1,5 +1,7 @@
 const url = "http://192.168.18.129:5000";
 
+
+
 function showPassword() {
     var x = document.getElementById("passwordBox");
     if (x.type === "password") {
@@ -11,7 +13,8 @@ function showPassword() {
     }
   }
 
-
+  
+//function to call login api
 async function login(){
   var username = document.getElementById("usernameBox").value;
   var pwd = document.getElementById("passwordBox").value;
@@ -34,6 +37,8 @@ async function login(){
   //window.location.href="task-home.html";
 }
 
+
+//fucntion to call signup api
 async function signup(){
   var email = document.getElementById("emailBox").value;
   var name = document.getElementById("nameBox").value;
@@ -79,6 +84,7 @@ async function signup(){
   
 }
 
+//function for closing and opening any modal div
 
 function showModal(id,flag){
   var modal = document.getElementById(id)
