@@ -2,8 +2,10 @@ function showPassword() {
     var x = document.getElementById("passwordBox");
     if (x.type === "password") {
       x.type = "text";
+      document.getElementById("togglePassword").className = "bi bi-eye";
     } else {
       x.type = "password";
+      document.getElementById("togglePassword").className = "bi bi-eye-slash";
     }
   }
 
